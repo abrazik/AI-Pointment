@@ -12,3 +12,6 @@ const logout = async () => {
 };
 
 document.querySelector('#logout').addEventListener('click', logout);
+
+// logout.js:14 Uncaught TypeError: Cannot read property 'addEventListener' of null
+// at logout.js:14

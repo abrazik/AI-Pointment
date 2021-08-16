@@ -8,42 +8,42 @@
           <!--Text Area to Input First name -->
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input id="first-name-update" type="text" class="validate" value={{ first_name}}>
+            <input id="first-name-update" type="text" class="validate" value="{{ first_name}}">
             <label for="first-name-update">First Name</label>
           </div>
           <!---Text Area to Input Last name -->
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input id="last-name-update" type="text" class="validate" value={{ last_name }}>
+            <input id="last-name-update" type="text" class="validate" value="{{ last_name }}">
             <label for="last-name-update">Last Name</label>
           </div>
           <!-- -Text Area to Input Last name -->
           <div class="input-field col s6">
             <i class="material-icons prefix">phone</i>
-            <input id="phone-update" type="tel" class="validate" value={{ phone }}>
+            <input id="phone-update" type="tel" class="validate" value="{{ phone }}">
             <label for="phone-update">Telephone</label>
           </div>
           <!-- -Text Area to Input Address-->
           <div class="input-field col s6">
             <i class="material-icons prefix">home</i>
-            <input id="address-update" type="text" class="validate" value={{ address }}>
+            <input id="address-update" type="text" class="validate" value="{{ address }}">
             <label for="address-update">Address</label>
           </div>
 
           <h4>Your Car Info: </h4>
           <!-- -Text Area to Input Make of Car-->
           <div class="input-field col s6">
-            <input id="make-update" type="text" class="validate" value={{ car_make }}>
+            <input id="make-update" type="text" class="validate" value="{{ car_make }}">
             <label for="make">Make</label>
           </div>
           <!-- -Text Area to Input Model of Car-->
           <div class="input-field col s6">
-            <input id="model-update" type="text" class="validate" value={{ car_model }}>
+            <input id="model-update" type="text" class="validate" value="{{ car_model }}">
             <label for="model-update">Model</label>
           </div>
           <!-- -Text Area to Input Year of Car-->
           <div class="input-field col s6">
-            <input id="year-update" type="number" class="validate" value={{ car_year }}>
+            <input id="year-update" type="number" class="validate" value={{car_year}}>
             <label for="year-update">Year</label>
           </div>
           <!-- Send button -->
@@ -54,13 +54,8 @@
           </div>
         </form>  
       </div>
-
-
     </div>
-
   </div>
-
-
 </div>
 
 
@@ -70,19 +65,48 @@
 
 <!-- Appointment Information Div -->
 <div class="container">
+
   <div class="card-panel teal lighten-8 grid-example col s12">
     <h4>Your AI-Pointment Info:</h4>
+    {{#if slots.length}}
     <h5> You have an appointment coming up:</h5>
-    {{#each slots as |slots|}}
-    <p>Date: {{slots.date}}</p> 
     
-    <br>
-    Time: 
-    <br>
-    Service:
-  </div>
-  {{/each}}
+<table style="width:100%">
+  <tr>
+    <th>Date</th>
+    <th>Time</th> 
+    <th>Service</th>
+  </tr>
+          {{#each slots }}
+  <tr>
+    <td>{{date}}</td>
+    <td>{{timeid.timestring}}</td>
+    <td>{{service.name}}</td>
+  </tr>
+          {{/each}}
+</table>
+
+{{else}}
+     <h5> No appointments scheduled.</h5>
+  {{/if}}
+
+
 </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
 
 
 

@@ -1,52 +1,68 @@
-<!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>AI-Pointment Autoservice</title>
-    
-</head>
-<body>
+
+  </head>
+  <body>
     <nav>
-        <div class="nav-wrapper teal lighten-7">
-          <a href="/" class="brand-logo">AI-Pointment</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-                    {{#if loggedIn}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-          </ul>
-        </div>
-      </nav>
-        
-        
+      <div class="nav-wrapper teal lighten-7">
+        <a href="/" class="brand-logo">AI-Pointment</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          {{! <button id="logout" class="btn-no-style">logout</button> }}
+          {{#if loggedIn}}
 
+            <a class="waves-effect waves-light btn-small" href="/">Home</a>
 
-<!-- Navigation bar -->
+            <a
+              class="waves-effect waves-light btn-small"
+              href="/profile"
+            >profile</a>
 
+            <a class="waves-effect waves-light btn-small" id="logout">logout</a>
 
+            {{! <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button> }}
+          {{else}}
+            {{! <a href="/login">login</a> }}
+            <a
+              class="waves-effect waves-light btn-small"
+              href="/login"
+            >login</a>
 
-          <!-- Render the sub layout -->
-      {{{ body }}}
-    
-   <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          {{/if}}
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navigation bar -->
+
+    <!-- Render the sub layout -->
+    {{{body}}}
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
   </body>
-    <script src="../js/logout.js"></script>
+  <script src="../js/logout.js"></script>
 
 </html>
