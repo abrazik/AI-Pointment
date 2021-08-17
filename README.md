@@ -1,8 +1,13 @@
 # AI-Pointment
-**screenshots will go here of each page**
-![Alt text](https://github.com/abrazik/)
-![Alt text](https://github.com/abrazik/)
-![Alt text](https://github.com/abrazik/)
+
+![Alt text](public\images\loginAIP.png "Screenshot of site 1")
+
+![Alt text](public\images\SIGNUP.png "Screenshot of site 1")
+
+![Alt text](public\images\CHATBOT.png "Screenshot of site 1")
+
+![Alt text](public\images\USERPROF.png "Screenshot of site 1")
+
 ## Description
 An App where users can speak to AI any day, any time, to schedule an appointment for their car.
 They can log in, schedule an appointment, and get an appointment confirmation all from within the Chatbot. 
