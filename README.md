@@ -1,12 +1,12 @@
 # AI-Pointment
 
-![Alt text](public\images\loginAIP.png "Screenshot of site 1")
+![Alt text](AI-Pointment\public\images\loginAIP.png "Screenshot of site 1")
 
-![Alt text](public\images\SIGNUP.png "Screenshot of site 1")
+![Alt text](AI-Pointment\public\images\SIGNUP.png "Screenshot of site 1")
 
-![Alt text](public\images\CHATBOT.png "Screenshot of site 1")
+![Alt text](AI-Pointment\public\images\CHATBOT.png\CHATBOT.png "Screenshot of site 1")
 
-![Alt text](public\images\USERPROF.png "Screenshot of site 1")
+![Alt text](AI-Pointment\public\images\USERPROF.png "Screenshot of site 1")
 
 ## Description
 An App where users can speak to AI any day, any time, to schedule an appointment for their car.
