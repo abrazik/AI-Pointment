@@ -1,7 +1,8 @@
 # AI-Pointment
 
-![Alt text](https://github.com/abrazik/AI-Pointment/blob/main/public/images/loginAIP.png "Screenshot of site 1")
+https://calm-anchorage-34598.herokuapp.com/
 
+![Alt text](https://github.com/abrazik/AI-Pointment/blob/main/public/images/loginAIP.png "Screenshot of site 1")
 
 ![Alt text](https://github.com/abrazik/AI-Pointment/blob/main/public/images/SIGNUP.png "Screenshot of site 2")
 
